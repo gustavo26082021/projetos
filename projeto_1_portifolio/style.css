@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital@1&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background-color: rgba(255, 190, 201, 0.993);
+}
+.container-cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+    height: auto;
+    border-radius: 20px;
+}
+.logo h1{
+    color: white;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: #000000;
+}
+.btn{
+    background-color: #fa2697;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.6rem;
+    
+
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(243, 81, 143);
+}
+.meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.direita img{
+    margin-top: 5rem;
+    border-radius: 900px;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+.esquerda {
+    max-width: 100%;
+}
+.title h1{
+    font-size: 50px;
+    color: white;
+
+}
+.esquerda p{
+    color: #ffffff;
+    line-height: 2.5rem;
+}
+button{
+    color: #fff;
+    background-color: #fa2697;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    color: white;
+    background-color: rgb(243, 81, 143);
+}
+aside {
+    display: none;
+}
+@media screen and (max-width:740px) {
+    ul{
+        display: none;
+    }
+    .links{
+        display: block;
+    }
+    .logo{
+        margin-right: 15rem;
+
+    }
+    aside{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        display: flex;
+        overflow: hidden;
+    }
+    #barra-menu{
+        background-color:rgb(243, 81, 143) ;
+        width: 0px;
+        height: 100vh;
+        transition: 0.3s all;
+        
+
+    }
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 0.5rem;
+        margin-top: 3rem;
+        color: #fff;
+        cursor: pointer;
+
+    }
+    #barra-menu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem
+    }
+    #barra-menu ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100%;
+        
+
+    }
+    #barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background-color: pink;
+
+    }
+    .c-icon{
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+
+    }
+    .c-icon span{
+        color: #fff;
+        font-size: 1rem;
+    }
+    
+
+
+
+
+
+
+
+}
+@media screen and (max-width:580px){
+    .title h1{
+        font-size: 2.2rem   ;
+        margin-left: 1.5rem;
+    }
+    .esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+    bottom{
+        margin-left: 1.5rem;
+    }
+    .direita img{
+        max-width: 100%;
+        margin-top: 4.5rem;
+        height: auto;
+
+    }
+
+}
+@media screen and (max-width:440px){
+    .direita img{
+        margin-left: 1rem;
+       
+    }
+   
+
+}
+@media screen and (max-width:370px){
+    .direita img {
+    margin-left: 4rem;
+    }
+    .logo{
+        margin-left: 4rem;
+    }
+   
+}
+
